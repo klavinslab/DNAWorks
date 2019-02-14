@@ -2,3 +2,5 @@
 **/dnaworks
 *.o
 *.mod
+
+LOGFILE.txt
