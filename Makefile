@@ -35,6 +35,9 @@ $(objects): $(modules)
 	$(FC) $(FLFLAGS) -c $<
 
 # extra rules
-.PHONY: clean
+.PHONY: clean clean-all
 clean:
-	rm -f $(objects) $(modules) $(PROGRAM)
+	rm -f $(objects) $(modules)
+
+clean-all:
+	rm -f $(PROGRAM)
